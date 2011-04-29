@@ -85,6 +85,12 @@ AKB48アプリケーションへのアクセス
     http://（ホスト・サブディレクトリ）/app_dev.php/
 
 
+Tested
+------
+
+* Symfony2 beta1 (f8cc8a7deba67ac4fc7c76b5b6bac03add3fbb40)
+
+
 ライセンス
 ----------
 
