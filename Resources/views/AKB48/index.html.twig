@@ -1,0 +1,16 @@
+{% extends "AcmeAKB48Bundle::layout.html.twig" %}
+
+{% block content %}
+{{ list|length }}名
+/ <a href="{{ path('index') }}">現役メンバー</a>
+/ <a href="{{ path('team_show', {'team_name': 'A'}) }}">チームA</a>
+/ <a href="{{ path('team_show', {'team_name': 'K'}) }}">チームK</a>
+/ <a href="{{ path('team_show', {'team_name': 'B'}) }}">チームB</a>
+/ <a href="{{ path('team_show', {'team_name': 'None'}) }}">チーム未定</a>
+/ <a href="{{ path('graduated') }}">卒業</a>
+<ul>
+    {% for member in list %}
+    <li><a href="{{ path('member_show', {'slug': member.slug}) }}">{{ member.name }}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}

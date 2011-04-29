@@ -1,0 +1,30 @@
+index:
+    pattern:  /
+    defaults: { _controller: AcmeAKB48Bundle:AKB48:index, _format: html }
+index_format:
+    pattern:  /index.{_format}
+    defaults: { _controller: AcmeAKB48Bundle:AKB48:index, _format: html }
+    requirements:
+        _format: csv|json
+
+team_show:
+    pattern:  /team/{team_name}
+    defaults: { _controller: AcmeAKB48Bundle:AKB48:teamShow, _format: html }
+team_show_format:
+    pattern:  /team/{team_name}.{_format}
+    defaults: { _controller: AcmeAKB48Bundle:AKB48:teamShow, _format: html }
+    requirements:
+        _format: csv|json
+
+graduated:
+    pattern:  /graduated
+    defaults: { _controller: AcmeAKB48Bundle:AKB48:graduated, _format: html }
+graduated_format:
+    pattern:  /graduated.{_format}
+    defaults: { _controller: AcmeAKB48Bundle:AKB48:graduated, _format: html }
+    requirements:
+        _format: csv|json
+
+member_show:
+    pattern:  /member/{slug}
+    defaults: { _controller: AcmeAKB48Bundle:AKB48:memberShow, _format: html }

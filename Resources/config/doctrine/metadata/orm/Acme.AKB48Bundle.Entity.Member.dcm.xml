@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                          http://www.doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+    <entity name="Acme\AKB48Bundle\Entity\Member" table="member" repository-class="Acme\AKB48Bundle\Repository\MemberRepository">
+        <id name="id" type="integer" column="id">
+            <generator strategy="AUTO"/>
+        </id>
+        <field name="nickname" column="nickname" type="string" length="50" nullable="true" />
+        <field name="firstName" column="first_name" type="string" length="50" nullable="true" />
+        <field name="familyName" column="family_name" type="string" length="50" nullable="true" />
+        <field name="firstNameKana" column="first_name_kana" type="string" length="50" nullable="true" />
+        <field name="familyNameKana" column="family_name_kana" type="string" length="50" nullable="true" />
+        <field name="firstNameEn" column="first_name_en" type="string" length="50" nullable="true" />
+        <field name="familyNameEn" column="family_name_en" type="string" length="50" nullable="true" />
+        <field name="birthday" column="birthday" type="date" nullable="true" />
+        <field name="hometown" column="hometown" type="string" length="50" nullable="true" />
+        <field name="class" column="class" type="string" length="50" nullable="true" />
+        <field name="team" column="team" type="string" length="50" nullable="true" />
+        <field name="graduatedAt" column="graduated_at" type="date" nullable="true" />
+        <field name="declinedAt" column="declined_at" type="date" nullable="true" />
+        <field name="createdAt" column="created_at"  type="datetime" nullable="true" />
+        <field name="updatedAt" column="updated_at"  type="datetime" nullable="true" />
+        <lifecycle-callbacks>
+            <lifecycle-callback type="prePersist" method="onPrePersist"/>
+            <lifecycle-callback type="preUpdate" method="onPreUpdate"/>
+        </lifecycle-callbacks>
+    </entity>
+</doctrine-mapping>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>{% block title %}AKB48!{% endblock %}</title>
+    </head>
+    <body>
+<a href="http://github.com/Symfonyans/AcmeAKB48Bundle"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://d3nwyuy0nl342s.cloudfront.net/img/7afbc8b248c68eb468279e8c17986ad46549fb71/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub"></a>
+        {% block body %}
+            <h1>AKB48!</h1>
+            <p>Acme\AKB48Bundle</p>
+
+            {% block content %}{% endblock %}
+
+            {% block footer %}
+            <hr />
+            by <a href="http://github.com/Symfonyans">しんふぉにゃんず</a>
+            / <a href="http://twitter.com/hidenorigoto">@hidenorigoto</a><br />
+            Powered by <a href="http://symfony.com/">Symfony2</a>
+            {% endblock %}
+        {% endblock %}
+    </body>
+</html>

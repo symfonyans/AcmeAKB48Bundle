@@ -1,0 +1,10 @@
+{% extends "AcmeAKB48Bundle::layout.html.twig" %}
+
+{% block content %}
+<p>AKB48バンドルのデータが初期化されていません。以下のコマンドを実行して、フィクスチャーを登録してください。</p>
+<pre>
+$ php app/console doctrine:fixtures:load
+</pre>
+<p>doctrine:fixtures:loadコマンドを実行するには、doctrine-fixtures関連ライブラリをインストールする必要があります。
+公式ドキュメントCookbookの「<a href="http://symfony.com/doc/2.0/cookbook/doctrine/doctrine_fixtures.html">How to create Fixtures in Symfony2</a>」を参照してください。</p>
+{% endblock %}
