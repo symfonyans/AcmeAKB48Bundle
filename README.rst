@@ -125,6 +125,13 @@ Tested
 * Symfony2 beta1 (f8cc8a7deba67ac4fc7c76b5b6bac03add3fbb40)
 
 
+TODO
+----
+
+* index.json / index.csv を正しく実装する（現状、壊れている）
+* akb48:list コマンドを実装する
+
+
 ライセンス
 ----------
 
