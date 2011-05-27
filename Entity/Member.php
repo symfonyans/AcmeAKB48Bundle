@@ -2,7 +2,7 @@
 namespace Acme\AKB48Bundle\Entity;
 
 use Symfony\Component\Serializer\Normalizer\NormalizableInterface;
-use Symfony\Component\Serializer\Normalizer\NormalizerInterface;
+use Symfony\Component\Serializer\SerializerInterface;
 
 /**
  * Member Entity
@@ -160,7 +160,7 @@ class Member implements NormalizableInterface
     /**
      * {@inheritdoc}
      */
-    function normalize(NormalizerInterface $normalizer, $format, $properties = null)
+    function normalize(SerializerInterface $serializer, $format = null)
     {
         $data = array();
         $data['nickname']            = $this->getNickname();
@@ -195,7 +195,7 @@ class Member implements NormalizableInterface
     /**
      * {@inheritdoc}
      */
-    function denormalize(NormalizerInterface $normalizer, $data, $format = null)
+    function denormalize(SerializerInterface $serializer, $data, $format = null)
     {
     }
 }
