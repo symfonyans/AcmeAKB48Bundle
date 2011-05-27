@@ -5,6 +5,13 @@ Symfony2 の機能を学ぶためのジョークバンドルです。似たも�
 Acme\AKB48Bundle では、Doctrine2 のモデル機能等を試せるように、メンバーひとりひとりを個別のクラスで実装するのではなく、Member エンティティとし、フィクスチャーにてデータベースにメンバー情報を登録するようにしてあります。
 
 
+注意
+----
+
+Symfony2 Standard Edition BETA3 では、Doctrine ORM 2.0.5 を利用していますが、本バンドルでは 2.0.5 以降に追加されたメソッドを利用していますので、ご注意ください。
+
+
+
 インストール
 ------------
 
@@ -74,7 +81,7 @@ Acme\AKB48Bundle では、メンバーのデータをフィクスチャーで管
 フィクスチャーを登録する
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-フィクスチャーの登録用コマンドを利用するには、あらかじめ DoctrineFixtures バンドルなどをセットアップする必要があります。公式ドキュメントの `How to create Fixtures in Symfony2 <http://symfony.com/doc/2.0/cookbook/doctrine/doctrine_fixtures.html>` を参照してインストールしてください。
+フィクスチャーの登録用コマンドを利用するには、あらかじめ DoctrineFixtures バンドルなどをセットアップする必要があります。公式ドキュメントの `How to create Fixtures in Symfony2 <http://symfony.com/doc/current/cookbook/doctrine/doctrine_fixtures.html>`_ を参照してインストールしてください。
 
 ライブラリがセットアップできたら、\ `doctrine:fixtures:load` コマンドを使えるようになりますので、これを実行します。
 
@@ -114,6 +121,7 @@ Symfony2 の StandardEdition では、Sensio\FrameworkExtraBundle が組み込�
 Tested
 ------
 
+* Symfony2 beta3
 * Symfony2 beta1 (f8cc8a7deba67ac4fc7c76b5b6bac03add3fbb40)
 
 
