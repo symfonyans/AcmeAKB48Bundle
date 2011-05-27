@@ -1,7 +1,7 @@
 Acme\AKB48バンドル (Symfony2)
 =============================
 
-Symfony2 の機能を学ぶためのジョークバンドルです。似たものに Perl の `Acme::AKB48 <https://github.com/hidek/Acme-AKB48>` があります。
+Symfony2 の機能を学ぶためのジョークバンドルです。似たものに Perl の `Acme::AKB48 <https://github.com/hidek/Acme-AKB48>`_ があります。
 Acme\AKB48Bundle では、Doctrine2 のモデル機能等を試せるように、メンバーひとりひとりを個別のクラスで実装するのではなく、Member エンティティとし、フィクスチャーにてデータベースにメンバー情報を登録するようにしてあります。
 
 
