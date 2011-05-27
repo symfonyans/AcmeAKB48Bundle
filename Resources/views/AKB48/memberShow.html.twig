@@ -13,10 +13,10 @@
   {% endif %}
   <li>チーム：{{ member.team }}</li>
   <li>クラス：{{ member.class }}</li>
-  <li><a href="http://ja.wikipedia.org/wiki/{{ member.familyName}}{{ member.firstName }}">Wikipedia</a> <a href="http://www23.atpages.jp/akb49/?{{ member.familyName}}{{ member.firstName }}">エケペディア</a></li>
+  <li><a href="http://ja.wikipedia.org/wiki/{{ member.familyName}}{{ member.firstName }}">Wikipedia</a> <a href="http://red.ribbon.to/~bingo/?{{ member.familyName}}{{ member.firstName }}">エケペディア</a></li>
 </ul>
 
-<iframe width="800" height="400" src="http://www23.atpages.jp/akb49/?{{ member.familyName}}{{ member.firstName }}"></iframe>
+<iframe width="800" height="400" src="http://red.ribbon.to/~bingo/?{{ member.familyName}}{{ member.firstName }}"></iframe>
 
 <a href="{{ path('index') }}">一覧に戻る</a>
 {% endblock %}
